@@ -82,6 +82,6 @@ figcaption {
 p.nota {
     padding: 1em;
     background-color:azure;
-    border-left: solid darkblue;
+    border-left: 3px solid darkblue;
     border-radius: 5px;
 }
