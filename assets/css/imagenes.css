@@ -1,0 +1,129 @@
+/* Marca de agua */
+
+.agua:before {
+  position: fixed;
+  content: '';
+  bottom: 2vh;
+  right: 5vh;
+  width: 56.77vh;
+  height: 20vh;
+  opacity: 0.2;
+  background-image: url("../svg/w3c/css.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+ /* Imagen banner de portada */
+header.portada {
+    width: 100%;
+    height: 50vh;
+    background-image: url('https://cdn.pixabay.com/photo/2020/02/09/13/08/banner-4833105_960_720.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Título centrado dentro de la imagen */
+header.portada {
+    position: relative;
+}
+
+header.portada h2 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.6);
+    color: #ffffff;
+}
+
+/*Background CSS (textos.html)*/
+
+figure.caja {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/24/20/48/programming-1857236_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Center = background-position: 50% 50%;*/
+    background-position: center;  
+        
+}
+
+
+/* Imágenes validadores*/
+
+/* Reglas comunes a los 3 */
+
+figure.w3c {
+    width: 88px;
+    height: 31px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+figure.w3c.css {
+    background-image: url("../svg/w3c/css.svg")
+}
+
+figure.w3c.wcag {
+    background-image: url("../svg/w3c/wcag.svg")
+}
+
+figure.w3c.html5 {
+    background-image: url("../svg/w3c/html5.svg")
+
+}
+
+/* +++++++++++++++++++++++++++++++++++++++*/
+    /* background imagen transparente */
+/* +++++++++++++++++++++++++++++++++++++++*/
+
+article.imagen {
+    width: 500px;
+    height: 300px;
+    background-color:cadetblue;
+    
+      
+}
+    
+article.imagen {
+    position: relative;
+}
+
+/*::before crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content */
+
+article.imagen:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0.5;
+}
+
+article.imagen h2, article.imagen p {
+    color: white;
+    text-align: center;
+    /* sin position relative no se ve el texto */
+    position: relative;
+}
+
+article.imagen p {
+    font-weight: bold;
+}
+
+
+
+
+
