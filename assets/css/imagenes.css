@@ -123,6 +123,9 @@ article.imagen p {
     font-weight: bold;
 }
 
-
-
+ul.galeria li{
+    
+    list-style: none;
+    display: inline-block;
+}
 

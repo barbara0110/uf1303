@@ -89,33 +89,90 @@ p.nota {
 
 /* FOOTER */
 
+/* > selector avanzado indica que solo afecta al footer hijo del body*/
 
-footer {
+body > footer {
     background-color: black;
-    padding: 10px;
+    padding-left:7.5vw;
+    padding-right: 7.5vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
     
     }
+/* Textos color en blanco */
 
-
-footer h2, footer span, footer a {
+body > footer h2,
+body > footer li a span, 
+body> footer li a {
     color: white;
 }
 
 
-footer li {
+/* Quita los puntos a las listas */
+body > footer li {
     list-style: none;
     
     
 }
 
-.cross-centro.legal  {
+/* Hace que los elemetos salgan seguidos en la misma línea */
+
+body > footer li.validator  {
     display: inline-block;
     
 }
 
+body > footer li.legal {
+    display: inline-block;
+    font-size: small;
+   
+    
+}
 
+/* reducir iconos de los validadores */
 
+figure.w3c {
+    width: 5vw;
+    height: 1.76vw;
+    margin: 0.5em;
+}
+ /* poner el mismo margen al texto que a la imágen */
 
+li.legal {
+    margin: 0.5em;
+}
+
+li.legal, li.legal a {
+    height: 4em;
+    line-height: 4em;
+}
+
+/* hace ionvisible el texto del h2 */
+
+footer section.footer__pie h2 {
+    display: none;
+    
+    
+}
+
+/* dividir el footer 40% para texto y 40% imagen */
+
+section.contentinfo a.pattern figure {
+    width: 20vw;
+    height: 11.25vw;
+    background-image:url("../img/galeria6_160.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div[role="group"] {
+    width: 40%;
+}
+
+section.contentinfo a.pattern {
+    width: 40%;
+}
 
 
 
