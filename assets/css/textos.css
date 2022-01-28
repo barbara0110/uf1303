@@ -87,6 +87,27 @@ p.nota {
 }
 
 
+/* FOOTER */
+
+
+footer {
+    background-color: black;
+    
+    }
+
+
+footer h2, footer span, footer a {
+    color: white;
+}
+
+
+footer li {
+    list-style: none;
+    
+    
+}
+
+
 
 
 
